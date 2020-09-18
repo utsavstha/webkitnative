@@ -4,7 +4,9 @@
       //It's really this simple. We'll call this from the native code.
         document.getElementById("p1").innerHTML = "New text!";
     }
-
+    function myFunction() {
+        document.getElementById("p1").innerHTML = "New text!";
+    }
     window.webkit.messageHandlers.payUPSC.postMessage({ param1: "stuff"});
 </script>
 <body>
