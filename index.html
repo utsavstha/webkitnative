@@ -1,7 +1,7 @@
 <html>
 <script>
     window.getDataFromNative = function(data) {
-        window.webkit.messageHandlers.doStuff.postMessage({ param1: "stuff", param2: data });
+        window.webkit.messageHandlers.doStuff.postMessage({ param2: data });
     }
     window.webkit.messageHandlers.doStuff.postMessage({ param1: "stuff", param2: "100" });
 </script>
