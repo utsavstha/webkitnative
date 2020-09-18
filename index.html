@@ -1,8 +1,8 @@
 <html>
 <script>
-    function getDataFromNative() {
+    function getDataFromNative(data) {
       //It's really this simple. We'll call this from the native code.
-        document.getElementById("p1").innerHTML = "New text!";
+        document.getElementById("p1").innerHTML = data;
     }
     function myFunction() {
         document.getElementById("p1").innerHTML = "New text!";
