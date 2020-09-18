@@ -1,9 +1,9 @@
 <html>
 <script>
     window.getDataFromNative = function(data) {
-        window.webkit.messageHandlers.doStuff.postMessage({ param2: data });
+        window.webkit.messageHandlers.payUPSC.postMessage({ param2: data });
     }
-    window.webkit.messageHandlers.doStuff.postMessage({ param1: "stuff"});
+    window.webkit.messageHandlers.payUPSC.postMessage({ param1: "stuff"});
 </script>
 
 </html>
