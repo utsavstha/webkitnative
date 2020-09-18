@@ -2,11 +2,14 @@
 <script>
     function getDataFromNative(date) {
       //It's really this simple. We'll call this from the native code.
-        window.webkit.messageHandlers.payUPSC.postMessage({ param2: data });
-
+        document.getElementById("p1").innerHTML = "New text!";
     }
 
     window.webkit.messageHandlers.payUPSC.postMessage({ param1: "stuff"});
 </script>
+<body>
+    <p id="p1">Hello World!</p>
+
+</body>
 
 </html>
