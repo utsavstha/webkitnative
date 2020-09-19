@@ -11,6 +11,8 @@
         document.getElementById("p1").innerHTML = "New text!";
     }
     window.webkit.messageHandlers.payUPSC.postMessage({ param1: "stuff"});
+    JSBridge.postUPSC(valueReceived);
+
 </script>
 <body>
     <p id="p1">Hello World!</p>
